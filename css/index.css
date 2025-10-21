@@ -1,15 +1,15 @@
 body{
    margin: 0;
-   padding:0;
+   padding: 0;
 }
 
 nav ul{
-   display:flex;
+   display: flex;
    justify-content: center;
-   gap: 2rem;
+   gap:2rem;
 }
 
-nav ul li{
+nav ul li {
    list-style: none;
 }
 
@@ -22,7 +22,10 @@ nav ul li a{
 }
 
 .footer{
-   display: flex;
+   display:flex;
    justify-content: center;
-   align-items: center;
+   background-color: rgb(83, 80, 80);
+   color: white;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
 }
