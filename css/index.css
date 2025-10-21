@@ -1,3 +1,28 @@
 body{
-   background-color: bisque;
+   margin: 0;
+   padding:0;
+}
+
+nav ul{
+   display:flex;
+   justify-content: center;
+   gap: 2rem;
+}
+
+nav ul li{
+   list-style: none;
+}
+
+nav ul li a{
+   text-decoration: none;
+}
+
+.wrapper{
+   min-height: 100vh;
+}
+
+.footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
