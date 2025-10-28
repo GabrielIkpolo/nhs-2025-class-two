@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,108 @@
     <link rel="stylesheet" href="../css/index.css">
     <title>Lesson Two</title>
 </head>
+
 <body>
-<nav>
-    <ul>
-        <li><a href="../index.html"> Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./gallery.html">Gallery</a></li>
-        <li><a href="./blog.html">Blog</a></li>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="../index.html"> Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+        </ul>
+    </nav>
 
-<div class="wrapper">
-    <h1>Welcome to Blog</h1>
-</div>
+    <div class="wrapper">
+        
 
-<div class="footer">
-    <p>&copy; Class work 2</p>
-</div>
+
+        <div class="inputElements">
+            <h1>Welcome to Blog</h1>
+            <h3>Input Elements: Examples with Attributes</h3>
+
+            <div class="form-group">
+                <label for="username">Username*</label>
+                <input type="text" name="username" placeholder="Enter your name" required maxlength="60" value="John"
+                    autocomplete="username" autofocus>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address*</label>
+                <input type="email" name="email" id="email" placeholder="you@example.com" required autocomplete="email">
+            </div>
+
+            <!-- password with readonly & value  -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password" minlength="6"
+                    readonly value="secret123">
+            </div>
+
+            <!-- input with min, max and step -->
+            <div class="form-group">
+                <label for="age">Age (18-100)</label>
+                <input type="number" name="age" min="18" max="100" step="1" value="25" placeholder="Enter your age">
+            </div>
+
+            <!-- Date input  -->
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob" required>
+            </div>
+
+            <!-- Time input  -->
+            <div class="form-group">
+                <label for="appointmentTime">Appointment Time</label>
+                <input type="time" name="appointmentTime" id="appointmentTime" step="900"> <!--15 mins increments -->
+            </div>
+
+            <!-- Color picker  -->
+            <div class="form-group">
+                <label for="favoriteColor">Favorite Color</label>
+                <input type="color" name="favoriteColor" id="favoriteColor" value="#ff0000">
+            </div>
+
+            <!-- Checkbox Example  -->
+            <div class="form-group">
+                <label for="interests">Interests</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="interests" value="codding" id="codding">Coding</label>
+                    <label><input type="checkbox" name="interests" value="design" id="design">Design</label>
+                    <label><input type="checkbox" name="interests" value="writing" id="writing"> Writing</label>
+                    <label> <input type="checkbox" name="interests" value="music" id="music">Music</label>
+                </div>
+            </div>
+
+
+            <!-- Radio Button Example  -->
+            <div class="form-group">
+                <label for="contact">Preferred Contact Method</label>
+                <div class="radio-group">
+                    <label> <input type="radio" name="contact" id="conatctEmail" value="email" checked>Email</label>
+                    <label><input type="radio" name="contact" id="phone" value="phone"> Phone</label>
+                    <label for=""> <input type="radio" name="contact" id="contactText" value="text">Text Message</label>
+                </div>
+            </div>
+
+
+            <!-- Submit & Reset  -->
+            <div class="form-group">
+                <button type="submit" name="submit">Submit</button>
+                <button type="reset" name="formReset">Reset</button>
+            </div>
+
+
+            <!-- Hidden Field  -->
+            <input type="hidden" name="formSubmitted" value="true">
+        </div>
+
+
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; Class work 2</p>
+    </div>
 </body>
+
 </html>
